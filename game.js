@@ -14,7 +14,7 @@ function nextSequence(){
     var chosenColorId = "#"+randomChosenColour;
     $(chosenColorId).fadeOut(200).fadeIn(200).fadeOut(200).fadeIn(200);
     // Implementing sound according to the color chosen
-    var colorSoundPath = "./"+ randomChosenColour+".mp3";
+    var colorSoundPath = randomChosenColour+".mp3";
     playSound(colorSoundPath);
     
 }
@@ -76,7 +76,7 @@ $(".btn").on("click",function(event){
     animatePress(userChosenColour);
     console.log("User pattern: "+userClickedPattern);
     console.log("User pattern: "+gamePattern);
-    var colorSoundPath = "./"+ userChosenColour+".mp3";
+    var colorSoundPath = userChosenColour+".mp3";
     playSound(colorSoundPath);
 });
 
